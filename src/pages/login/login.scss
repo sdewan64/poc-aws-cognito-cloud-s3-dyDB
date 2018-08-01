@@ -1,0 +1,54 @@
+page-login {
+  
+  .logo {
+    padding: 20px 0px 0px 0px;
+    text-align: center
+  }
+
+  .social_icon {
+    max-width: 64px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .image_container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .image_container_bottom {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 5px;
+  }
+
+  .image_container_center_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image_container_center_text_half_left {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+  }
+
+  .image_container_center_text_half_right {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%, -50%);
+  }
+
+  .outline_button {
+    font-size: 9px;
+  }
+
+}

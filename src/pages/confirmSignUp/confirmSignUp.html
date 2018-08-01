@@ -1,0 +1,22 @@
+<ion-content>
+  <div padding>
+    <p style="color: white">Please enter the confirmation code sent to your email to verify your account:</p>
+  </div>
+  <form (submit)="confirm()">
+    <ion-list>
+
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="code" name="code" placeholder="Confirmation Code"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button class="outline_button" ion-button round outline>Confirm Login</button>
+      </div>
+
+      <div padding>
+        <p style="color: white">Haven't received the confirmation code email yet? <a (click)="resendCode()" style="color: whitesmoke">Resend</a></p>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>  

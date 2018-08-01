@@ -1,0 +1,24 @@
+page-tasks-create {
+  .custom-item {
+    flex-direction: column;
+
+    textarea {
+      margin: 0;
+    }
+  }
+
+  ion-item {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  ion-item.item {
+    background-color: white;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    .label {
+        color: #E6236D;
+    }
+  }
+}

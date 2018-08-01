@@ -1,0 +1,45 @@
+<ion-content>
+  <div text-center class="logo">
+    <h3 style="color:white">Login with your Social Profile</h3>
+    <img (click)="notImplementedYet()" class="social_icon" src="assets/imgs/twitter.png" />
+    <img (click)="loginWithFacebook()" class="social_icon" src="assets/imgs/facebook.png" />
+    <img (click)="notImplementedYet()" class="social_icon" src="assets/imgs/google.png" />
+  </div>
+  <div text-center class="logo">
+    <h3 style="color:white">or login with username</h3>
+  </div>
+  <form (submit)="login()">
+    <ion-list>
+
+      <ion-item>
+        <ion-input text-center [(ngModel)]="loginDetails.username" type="text" autocorrect="off" autocapitalize="none" name="username" placeholder="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input text-center [(ngModel)]="loginDetails.password" type="password" name="password" placeholder="password"></ion-input>
+      </ion-item>
+
+      <div padding class="image_container">
+        <img (click)="login()" style="max-width: 150px;" src="assets/imgs/button_shape_big_bezzel.png" />
+        <div (click)="login()" class="image_container_center_text" style="font-size: 17px"><b>Log In</b></div>
+      </div>
+      
+      <div class="image_container">
+        <img (click)="signup()" style="max-width: 150px;" src="assets/imgs/button_shape_big_bezzel.png" />
+        <div (click)="signup()" class="image_container_center_text" style="font-size: 17px"><b>Register</b></div>
+      </div>
+    </ion-list>
+  </form>
+
+  <div style="margin-top: 60px; width: 100%;">
+    <div style="text-align: center">
+      <div text-center>
+        <button class="outline_button" ion-button round outline (click)="notImplementedYet()">Forgot Password?</button>
+      </div>
+      <div text-center>
+        <button class="outline_button" ion-button round outline (click)="notImplementedYet()">Terms & Conditions</button>
+        <button class="outline_button" ion-button round outline (click)="notImplementedYet()">Privacy Policy</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

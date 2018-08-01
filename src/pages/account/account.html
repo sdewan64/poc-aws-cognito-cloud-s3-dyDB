@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div padding text-center>
+    <div *ngIf="avatarPhoto" class="avatar" [style.background-image]="'url('+ avatarPhoto +')'">
+    </div>
+
+    <button class="outline_button" ion-button round outline style="color: #FFF;margin-top: 28px;" (click)="selectAvatar()">Change photo</button>
+
+    <input #avatar class="avatar-input" type="file" (change)="uploadFromFile($event)" />
+  </div>
+  
+</ion-content>

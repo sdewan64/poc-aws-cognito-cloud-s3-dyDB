@@ -1,0 +1,35 @@
+<ion-content>
+  <div text-center class="logo">
+    
+  </div>
+  <form (submit)="signup()">
+    <p *ngIf="error" style="text-align: center;color: #FFF">{{error.message}}</p>
+    <ion-list>
+
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="userDetails.username" autocorrect="off" autocapitalize="none" name="username" placeholder="Username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="email" [(ngModel)]="userDetails.email" name="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="tel" [(ngModel)]="userDetails.phone_number" name="phone_number" placeholder="Phone Number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" [(ngModel)]="userDetails.password" name="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <div padding text-center>
+        <button class="outline_button" ion-button round outline>Register</button>
+      </div>
+
+      <div padding text-center>
+        <p><a (click)="login()" style="color: white">Return to login</a>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

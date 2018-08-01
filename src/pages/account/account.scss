@@ -1,0 +1,34 @@
+page-account {
+  .avatar-input {
+    display: none;
+  }
+
+  .avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    margin: 0 auto;
+    border: 5px solid #f1f1f1;
+    box-shadow: 0 0 5px #999;
+  }
+
+  ion-item {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  ion-item.item {
+    background-color: white;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    .label {
+        color: red;
+    }
+  }  
+}
